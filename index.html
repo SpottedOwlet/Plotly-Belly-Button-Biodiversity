@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
@@ -15,29 +16,34 @@
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+        <p style="font-size:30px;">The interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-12">
+        <h3 style="text-align:center">About Belly Button Diversity Project:</h3>
+        <p style="text-align: justify; font-size:20px;">Belly button diversity study has thrown light on bacterial species that live & thrive in our belly buttons. Several belly button swabs from various participants were tested, studied, documented and are now being presented to you in the form of this dashboard. Feel free to select a a belly button specimen in the form of an id number. The horizontal bar graph will show you top 10 strains of bacteria found in that sample. The gauge shows the weekly frequency of belly button washing for that sample. Lastly, the bubble chart shows the bacteria cultures in a belly button per sample. The size of a bubble on a bubble chart is directly proportional to the number of that kind of bacteria found in that sample. </p> 
+        <p style="text-align: center; font-size:20px;">Feel free to hover over horizontal bars & bubbles in bubble chart, for more information about respective data points. </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        <div class="panel panel-primary">
+        <div class="panel panel-primary col-md-12">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
-          <div id="sample-metadata" class="panel-body"></div>
+          <div id="sample-metadata" class="panel-body col-md-12"></div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-6">
         <div id="bar"></div>
       </div>
-      <div class="col-md-5">
-        <!-- <h4 style="text-align: center">Belly Button Washing Frequency</h4> <br>
-        <h5 style="text-align: center">Scrubs per Week</h5> -->
+      <div class="col-md-6">
         <div style="text-align: center" id="gauge"></div>
       </div>
     </div>
@@ -51,7 +57,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="samples.json"></script>
-  <script src="bar.js"></script>
+  <script src="static/js/app.js"></script>
 
 </body>
 
