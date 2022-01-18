@@ -30,6 +30,8 @@ The data was also collected from the research participants for belly button wash
 
 <h2><p align = center> Results </p></h2>
 
+This dashboard can be accessed using this link: https://spottedowlet.github.io/Plotly-Belly-Button-Biodiversity/
+
 <p align=center><kbd> 
   <img width="674" alt="Screen Shot 2022-01-17 at 10 19 24 PM" src="https://user-images.githubusercontent.com/90424752/149882472-175e5531-439b-42f1-b1d3-3d9e5a82a81b.png">
 </kbd></p>
